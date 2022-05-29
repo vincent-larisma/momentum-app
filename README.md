@@ -1,4 +1,4 @@
-# momentum-app
+# momentum-app(anime themed)
 
 ### description
 a website for momentum-app project which showcases:
