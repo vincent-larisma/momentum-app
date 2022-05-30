@@ -6,23 +6,32 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Momentum App</title>
 		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="./js/script.js" defer></script>
 	</head>
 	<body>
 		<header>
-			<nav>
-				<div>weather</div>
-				<div></div>
+			<nav class="flex-container">
+				<div>Link</div>
+				<div>Weather</div>
 			</nav>
 		</header>
 		<main>
-			<section class="time"></section>
-			<section class="greetings"></section>
-			<section class="main-focus"></section>
-			<section class="quote"></section>
+			<div class="grid-container">
+				<section class="time"></section>
+				<section class="greetings">Goodmorning, Name!</section>
+				<section class="main-focus">Topic</section>
+				<section class="quote">Quote</section>
+			</div>
 		</main>
 		<footer>
-			<div class="setting"></div>
-			<div class="todo"></div>
+			<div class="setting">Gear</div>
+			<div class="todo">Todo</div>
 		</footer>
 	</body>
 </html>

@@ -1,0 +1,17 @@
+html {
+	color: $primary-font-color;
+	font-family: $primary-font;
+}
+
+section {
+	text-align: center;
+	font-size: $size-small;
+	font-weight: $font-regular;
+
+	&:nth-child(1) {
+		font-family: $accent-font;
+		text-transform: uppercase;
+		font-size: $size-medium;
+		font-weight: $font-accent-bold;
+	}
+}
