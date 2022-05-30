@@ -6,7 +6,7 @@ html {
 section {
   text-align: center;
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 section:nth-child(1) {
   font-family: "Nunito", sans-serif;
@@ -51,5 +51,4 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../../img/afternoon.jpg);
 }/*# sourceMappingURL=styles.css.map */

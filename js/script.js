@@ -19,15 +19,15 @@ setInterval(refreshTime, 1000)
 
 function backgroundImgRefresh() {
 	let timeOFDay = new Date()
+	let body = document.querySelector('body')
+
 	if (timeOFDay.getHours() > 6 && timeOFDay.getHours() <= 12) {
-		document.querySelector('body').style.backgroundImage =
-			'url(../img/day.jpg);'
+		body.style.backgroundImage = 'url(../../img/day.jpg)'
 	} else if (timeOFDay.getHours() > 12 && timeOFDay.getHours() <= 18) {
-		document.querySelector('body').style.backgroundImage =
-			'url(../img/afternoon.jpg);'
-	} else if (timeOFDay.getHours() > 18 && timeOFDay.getHours() <= 6) {
-		document.querySelector('body').style.backgroundImage =
-			'url(../img/night.jpg);'
+		body.style.backgroundImage = 'url(../../img/afternoon.jpg)'
+	} else {
+		console.log('evening')
+		body.style.backgroundImage = 'url(../../img/night.jpg)'
 	}
 }
 setInterval(backgroundImgRefresh, 1000)
