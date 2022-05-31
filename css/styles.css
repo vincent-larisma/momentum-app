@@ -6,10 +6,10 @@ html {
 section {
   text-align: center;
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
 }
 section:nth-child(1) {
-  font-family: "Nunito", sans-serif;
   text-transform: uppercase;
   font-size: 5rem;
   font-weight: 600;
@@ -25,12 +25,54 @@ section:nth-child(1) {
   display: grid;
   place-content: center;
   grid-row: repeat(4, 1fr);
-  gap: 1rem;
+  gap: 0.5rem;
   height: 91vh;
+}
+.grid-container section {
+  border-radius: 1px;
+  background-color: rgba(134, 134, 134, 0.3);
 }
 
 footer {
   align-content: flex-end;
+}
+
+.quote {
+  border-radius: 1px;
+  background-color: rgba(134, 134, 134, 0.3);
+}
+
+input {
+  width: 20rem;
+  height: 3rem;
+  color: white;
+  background: none;
+  border: none;
+  border-bottom: 3px solid white;
+  border-radius: 2px;
+  text-align: center;
+  outline: none;
+}
+
+input:focus {
+  background: rgba(134, 134, 134, 0.3);
+}
+
+.form-container {
+  display: none;
+  place-content: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+.name, input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
 }
 
 *,

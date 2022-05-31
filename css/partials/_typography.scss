@@ -6,10 +6,10 @@ html {
 section {
 	text-align: center;
 	font-size: $size-small;
-	font-weight: $font-bold;
+	font-weight: $font-accent-bold;
+	font-family: $accent-font;
 
 	&:nth-child(1) {
-		font-family: $accent-font;
 		text-transform: uppercase;
 		font-size: $size-medium;
 		font-weight: $font-accent-bold;

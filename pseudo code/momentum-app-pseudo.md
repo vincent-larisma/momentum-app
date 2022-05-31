@@ -30,9 +30,7 @@ use media query 320 px width design
 2. Web layout
 3. Landscape layout
 4. Time
-5. Greeting + User input name
+5. Greeting + User input name and focus
 6. Quote
 7. Todo
 8. Finalize
-
-## _indepth_
