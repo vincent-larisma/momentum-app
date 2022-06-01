@@ -34,6 +34,7 @@ function backgroundImgRefresh() {
 		body.style.backgroundImage = 'url(../../img/night.jpg)'
 	}
 }
+
 setInterval(backgroundImgRefresh, 1000)
 
 //greetings
@@ -41,39 +42,42 @@ setInterval(backgroundImgRefresh, 1000)
 function greet() {
 	let morningAfternoonNight = new Date()
 	let greet = document.querySelector('.greetings')
+	let inputName = document.querySelector('[data-input-name]')
+	let name = document.querySelector('.input-name-container')
 
-	if (
-		morningAfternoonNight.getHours() >= 1 &&
-		morningAfternoonNight.getHours() <= 12
-	) {
-		greet.textContent = 'Goodmorning, input!'
-	} else if (
-		morningAfternoonNight.getHours() > 12 &&
-		morningAfternoonNight.getHours() <= 18
-	) {
-		greet.textContent = 'Goodafternoon, input!'
-	} else {
-		greet.textContent = 'Goodevening, input!'
-	}
+	inputName.addEventListener('keypress', (event) => {
+		if (event.key === 'Enter') {
+			let username = inputName.value
+			name.style.display = 'none'
+			if (
+				morningAfternoonNight.getHours() >= 1 &&
+				morningAfternoonNight.getHours() <= 12
+			) {
+				greet.textContent = 'Goodmorning, ' + username + '!'
+			} else if (
+				morningAfternoonNight.getHours() > 12 &&
+				morningAfternoonNight.getHours() <= 18
+			) {
+				greet.textContent = 'Goodafternoon, ' + username + '!'
+			} else {
+				greet.textContent = 'Goodevening, ' + username + '!'
+			}
+		}
+	})
 }
 setInterval(greet, 1000)
 
-// input form
-
-;(() => {
-	const searchParams = new URLSearchParams(window.location.search)
-	const email = searchParams.get('email')
-	console.log(email)
-	const domName = document.querySelector('[data-email]')
-	console.log(domName)
-
-	if (domName) {
-		domName.textContent =
-			'Please check your email(' +
-			email +
-			') for further instructions on how to complete your account setup.'
+// focus
+let inputFocus = document.querySelector('[data-input-focus]')
+let focus = document.querySelector('.input-focus-container')
+let mainFocus = document.querySelector('.main-focus')
+inputFocus.addEventListener('keypress', (event) => {
+	if (event.key === 'Enter') {
+		let focusTopic = inputFocus.value
+		focus.style.display = 'none'
+		mainFocus.textContent = focusTopic
 	}
-})()
+})
 
 //quote
 const quotes = [
@@ -110,4 +114,4 @@ function giveQuote() {
 	let randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
 	quoteDisplay.textContent = randomQuote
 }
-giveQuote()
+setInterval(giveQuote, 1000 * 10)

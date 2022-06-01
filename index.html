@@ -15,12 +15,16 @@
 		<script src="./js/script.js" defer></script>
 	</head>
 	<body>
-		<div class="form-container">
+		<div class="input-name-container">
 			<div class="name">Your Name?</div>
-			<form method="get">
-				<input type="text" />
-			</form>
+			<input autocomplete="off" type="text" name="username" data-input-name />
 		</div>
+
+		<div class="input-focus-container">
+			<div class="focus">What is your focus for today?</div>
+			<input type="text" data-input-focus />
+		</div>
+
 		<header>
 			<nav class="flex-container">
 				<div>Link</div>
@@ -31,7 +35,7 @@
 			<div class="grid-container">
 				<section class="time"></section>
 				<section class="greetings"></section>
-				<section class="main-focus">Topic</section>
+				<section class="main-focus"></section>
 			</div>
 		</main>
 		<footer>

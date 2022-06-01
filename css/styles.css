@@ -24,13 +24,13 @@ section:nth-child(1) {
 .grid-container {
   display: grid;
   place-content: center;
-  grid-row: repeat(4, 1fr);
+  grid-row: repeat(3, 1fr);
   gap: 0.5rem;
   height: 91vh;
 }
 .grid-container section {
   border-radius: 1px;
-  background-color: rgba(134, 134, 134, 0.3);
+  width: auto;
 }
 
 footer {
@@ -43,7 +43,6 @@ footer {
 }
 
 input {
-  width: 20rem;
   height: 3rem;
   color: white;
   background: none;
@@ -52,14 +51,15 @@ input {
   border-radius: 2px;
   text-align: center;
   outline: none;
+  background: none;
 }
 
 input:focus {
   background: rgba(134, 134, 134, 0.3);
 }
 
-.form-container {
-  display: none;
+.input-name-container, .input-focus-container {
+  display: grid;
   place-content: center;
   position: relative;
   height: 100vh;
@@ -68,10 +68,19 @@ input:focus {
 }
 
 .name, input {
+  color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 3rem;
   letter-spacing: 0.5rem;
+  text-align: center;
+}
+
+.focus {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
   text-align: center;
 }
 

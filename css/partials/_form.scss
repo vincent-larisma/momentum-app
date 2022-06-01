@@ -1,6 +1,5 @@
 input {
 	@extend .name;
-	width: 20rem;
 	height: 3rem;
 	color: $primary-font-color;
 	background: none;
@@ -9,6 +8,7 @@ input {
 	border-radius: 2px;
 	text-align: center;
 	outline: none;
+	background: none;
 }
 input:focus {
 	background: $background-transparent;
