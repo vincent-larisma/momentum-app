@@ -13,6 +13,10 @@
 			rel="stylesheet"
 		/>
 		<script src="./js/script.js" defer></script>
+		<script
+			src="https://kit.fontawesome.com/6914ea1ba2.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
 		<div class="input-name-container">
@@ -37,11 +41,25 @@
 				<section class="greetings"></section>
 				<section class="main-focus"></section>
 			</div>
+			<section></section>
 		</main>
+		
 		<footer>
-			<div class="setting">Gear</div>
-			<div class="quote"></div>
-			<div class="todo">Todo</div>
+			
+			<div><i class="setting fa-solid fa-gear"></i></div>
+			<div class="quote-container">
+				<div class="random-quote"><i class="fa-solid fa-rotate"></i></div>
+				<div class="add-quote"><i class="fa-solid fa-circle-plus"></i></div>
+				<div class="add-quote-input-container hidden">
+					<input type="text" data-input-quote />
+				</div>
+				<div class="quote"></div>
+			</div>
+			<div class="todo-background">
+				<div class="cancelButton"><i class="fa-solid fa-xmark"></i></div>
+			</div>
+				<div class="todo">Todo</div>
+			</div>
 		</footer>
 	</body>
 </html>

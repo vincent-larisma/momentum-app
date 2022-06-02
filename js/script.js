@@ -114,4 +114,24 @@ function giveQuote() {
 	let randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
 	quoteDisplay.textContent = randomQuote
 }
-setInterval(giveQuote, 1000 * 10)
+giveQuote()
+
+let repeatRandomQuote = document.querySelector('.random-quote')
+repeatRandomQuote.addEventListener('click', giveQuote)
+
+let addQuote = document.querySelector('.add-quote')
+let inputOpenQuote = document.querySelector('.hidden')
+addQuote.addEventListener('click', () => {
+	inputOpenQuote.classList.toggle('hidden')
+})
+
+let inputAddQuote = document.querySelector('[data-input-quote]')
+inputAddQuote.addEventListener('keypress', (event) => {
+	if (event.key === 'Enter') {
+		let quoteAdd = inputAddQuote.value
+		quotes.push(quoteAdd)
+		inputOpenQuote.classList.toggle('hidden')
+		console.log(quotes)
+		inputAddQuote.value = ''
+	}
+})

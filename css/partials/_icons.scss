@@ -1,0 +1,19 @@
+.add-quote {
+	justify-self: end;
+	margin-right: -1rem;
+	grid-row: 1/ 1;
+
+	&:hover {
+		cursor: pointer;
+		color: rgb(220, 220, 220);
+	}
+}
+.random-quote {
+	justify-self: start;
+	margin-left: -1rem;
+	grid-row: 1/ 1;
+	&:hover {
+		cursor: pointer;
+		color: rgb(220, 220, 220);
+	}
+}
