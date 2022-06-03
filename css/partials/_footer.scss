@@ -30,7 +30,7 @@ footer {
 // input for quote
 
 .hidden {
-	display: none;
+	display: none !important;
 }
 
 .add-quote-input-container {
@@ -41,6 +41,7 @@ footer {
 	justify-self: end;
 	align-items: center;
 	width: 20rem;
+
 	input {
 		padding-right: 5px;
 		font-size: 1.1rem;
@@ -53,21 +54,4 @@ footer {
 		border-radius: 2px;
 		background: $background-transparent;
 	}
-}
-
-// Todo
-.todo {
-	@extend .setting;
-	font-weight: $font-bold;
-}
-
-.todo-background {
-	display: grid;
-	position: absolute;
-	top: 54%;
-	left: 83%;
-	width: 15rem;
-	height: 20rem;
-	border-radius: 5px;
-	background-color: $background-transparent-todolist;
 }

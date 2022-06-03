@@ -43,9 +43,8 @@
 			</div>
 			<section></section>
 		</main>
-		
+
 		<footer>
-			
 			<div><i class="setting fa-solid fa-gear"></i></div>
 			<div class="quote-container">
 				<div class="random-quote"><i class="fa-solid fa-rotate"></i></div>
@@ -55,11 +54,29 @@
 				</div>
 				<div class="quote"></div>
 			</div>
-			<div class="todo-background">
-				<div class="cancelButton"><i class="fa-solid fa-xmark"></i></div>
+			<div class="todo-background hidden">
+				<div class="todo-header">
+					<div class="todo-title">Todo List</div>
+					<div class="cancel-button">
+						<i class="fa-solid fa-xmark"></i>
+					</div>
+					<div class="todo-input">
+						<input type="text" data-input-todoList />
+					</div>
+				</div>
+				<div class="todo-list-container">
+					<!-- <div class="content">
+						<div class="check-box-container">
+							<i class="fa-solid fa-square"></i>
+						</div>
+						<input type="text" class="text" value="A new task" readonly />
+						<div class="delete-container">
+							<i class="fa-solid fa-ban "></i>
+						</div> -->
+					</div>
+				</div>
 			</div>
-				<div class="todo">Todo</div>
-			</div>
+			<div class="todo">Todo</div>
 		</footer>
 	</body>
 </html>

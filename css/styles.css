@@ -57,7 +57,7 @@ footer {
   align-content: flex-end;
 }
 
-.setting:hover, .todo:hover {
+.setting:hover, .todo-list-container .delete-container:hover, .todo-list-container .check-box-container:hover, .cancel-button:hover, .todo:hover {
   cursor: pointer;
   color: rgb(220, 220, 220);
 }
@@ -77,7 +77,7 @@ footer {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .add-quote-input-container {
@@ -100,21 +100,6 @@ footer {
   border: 1px solid white;
   border-radius: 2px;
   background: rgba(134, 134, 134, 0.3);
-}
-
-.todo {
-  font-weight: 700;
-}
-
-.todo-background {
-  display: grid;
-  position: absolute;
-  top: 54%;
-  left: 83%;
-  width: 15rem;
-  height: 20rem;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 input {
@@ -171,6 +156,86 @@ html,
 body {
   height: 100%;
   overflow: hidden;
+}
+
+.todo {
+  font-weight: 700;
+}
+
+.todo-background {
+  display: grid;
+  position: absolute;
+  top: 54%;
+  left: 83%;
+  width: 15rem;
+  height: 20rem;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-items: center;
+}
+
+.todo-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 2rem;
+}
+
+.todo-input {
+  margin-left: 1.5rem;
+}
+.todo-input input {
+  padding-left: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 12rem;
+  height: 1.5rem;
+  text-align: start;
+  letter-spacing: normal;
+  border: 1px solid white;
+  border-radius: 2px;
+  background: rgba(134, 134, 134, 0.3);
+}
+
+.cancel-button {
+  justify-self: end;
+  margin-top: 0.5rem;
+  margin-right: 0.9rem;
+}
+
+.todo-title {
+  justify-self: center;
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+.todo-list-container {
+  display: flex;
+  width: 14rem;
+  height: 15rem;
+  border-radius: 5px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.todo-list-container .text {
+  padding-left: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+  height: 1.5rem;
+  text-align: start;
+  letter-spacing: normal;
+  border-bottom: 2px solid black;
+  border-radius: none;
+}
+.todo-list-container .content {
+  display: flex;
+  align-items: baseline;
+}
+.todo-list-container i {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 body {
