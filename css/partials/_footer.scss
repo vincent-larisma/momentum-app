@@ -18,12 +18,14 @@ footer {
 	grid-template-columns: repeat(2, 1fr);
 	place-content: center;
 	justify-items: center;
+
 	margin-top: -1rem;
 }
 
 .quote {
 	border-radius: 1px;
 	background-color: rgba(134, 134, 134, 0.3);
+	text-align: center;
 	grid-column: 1 / span 2;
 }
 
@@ -55,3 +57,5 @@ footer {
 		background: $background-transparent;
 	}
 }
+
+

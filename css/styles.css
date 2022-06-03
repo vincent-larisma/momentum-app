@@ -48,6 +48,13 @@ section:nth-child(1) {
   gap: 0.5rem;
   height: 91vh;
 }
+.grid-container .background-container {
+  display: grid;
+  place-content: center;
+  grid-row: repeat(3, 1fr);
+  gap: 0.5rem;
+  background: rgba(134, 134, 134, 0.3);
+}
 .grid-container section {
   border-radius: 1px;
   width: auto;
@@ -73,6 +80,7 @@ footer {
 .quote {
   border-radius: 1px;
   background-color: rgba(134, 134, 134, 0.3);
+  text-align: center;
   grid-column: 1/span 2;
 }
 
@@ -218,6 +226,10 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
 }
+.todo-list-container .checked {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
 .todo-list-container .text {
   padding-left: 5px;
   font-size: 1rem;
@@ -233,6 +245,12 @@ body {
   display: flex;
   align-items: baseline;
 }
+.todo-list-container .done-check-box {
+  color: rgb(220, 220, 220);
+}
+.todo-list-container .done-check-box:hover {
+  color: rgb(220, 220, 220);
+}
 .todo-list-container i {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -242,4 +260,64 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .quote-container {
+    margin-top: -6rem;
+    width: 85vmin;
+  }
+
+  section {
+    font-size: 10vmin;
+  }
+
+  .grid-container {
+    height: 89vh;
+  }
+
+  .name, input {
+    font-size: 2rem;
+    width: 16rem;
+  }
+
+  .input-focus-container {
+    justify-items: center;
+  }
+
+  .grid-container {
+    gap: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  .add-quote-input-container {
+    width: 10rem;
+  }
+
+  .todo-background {
+    top: 8rem;
+    left: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+  .todo-background {
+    top: 8rem;
+    left: 4.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  .todo-background {
+    top: 8rem;
+    left: 6rem;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+@media (min-width: 768px) and (max-width: 768px) {
+  .todo-background {
+    top: 8rem;
+    left: 18rem;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }/*# sourceMappingURL=styles.css.map */

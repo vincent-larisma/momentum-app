@@ -4,6 +4,13 @@
 	grid-row: repeat(3, 1fr);
 	gap: 0.5rem;
 	height: 91vh;
+	.background-container {
+		display: grid;
+		place-content: center;
+		grid-row: repeat(3, 1fr);
+		gap: 0.5rem;
+		background: $background-transparent;
+	}
 	section {
 		border-radius: 1px;
 		width: auto;

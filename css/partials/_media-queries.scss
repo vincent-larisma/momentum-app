@@ -1,0 +1,59 @@
+@media (max-width: 768px) {
+	.quote-container {
+		margin-top: -6rem;
+		width: 85vmin;
+	}
+	section {
+		font-size: 10vmin;
+	}
+	.grid-container {
+		height: 89vh;
+	}
+
+	.name {
+		font-size: 2rem;
+		width: 16rem;
+	}
+	.input-focus-container {
+		justify-items: center;
+	}
+
+	.grid-container {
+		gap: 0;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+	.add-quote-input-container {
+		width: 10rem;
+	}
+
+	.todo-background {
+		top: 8rem;
+		left: 2.5rem;
+		background-color: $background-transparent-todolist;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+	.todo-background {
+		top: 8rem;
+		left: 4.5rem;
+		background-color: $background-transparent-todolist;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+	.todo-background {
+		top: 8rem;
+		left: 6rem;
+		background-color: $background-transparent-todolist;
+	}
+}
+@media (min-width: 768px) and (max-width: 768px) {
+	.todo-background {
+		top: 8rem;
+		left: 18rem;
+		background-color: $background-transparent-todolist;
+	}
+}

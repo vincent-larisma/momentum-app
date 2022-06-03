@@ -130,12 +130,16 @@ window.addEventListener('load', () => {
 	inputAddQuote.addEventListener('keypress', (event) => {
 		if (event.key === 'Enter') {
 			let quoteAdd = inputAddQuote.value
-			quotes.push(quoteAdd)
+			localStorage.setItem('newQuote', quoteAdd)
+			let newQuote = localStorage.getItem('newQuote')
+			// quotes.push(quoteAdd)
+			quotes.push(newQuote)
 			inputOpenQuote.classList.toggle('hidden')
+			console.log(quotes)
 			inputAddQuote.value = ''
 		}
 	})
-
+	quotes.push(localStorage.getItem('newQuote'))
 	//todo
 
 	const cancelButton = document.querySelector('.cancel-button')
@@ -184,6 +188,11 @@ window.addEventListener('load', () => {
 				todoList.remove()
 				deleteToDo.remove()
 				checkBox.remove()
+			})
+
+			checkBox.addEventListener('click', () => {
+				checkBox.classList.toggle('done-check-box')
+				todoList.classList.toggle('checked')
 			})
 		}
 	})

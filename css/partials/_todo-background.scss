@@ -59,6 +59,10 @@
 	overflow-y: auto;
 	overflow-x: hidden;
 
+	.checked {
+		text-decoration-line: line-through;
+	}
+
 	.text {
 		padding-left: 5px;
 		font-size: 1rem;
@@ -77,6 +81,13 @@
 
 	.check-box-container:hover {
 		@extend .setting;
+	}
+	.done-check-box {
+		color: rgb(220, 220, 220);
+
+		&:hover {
+			color: rgb(220, 220, 220);
+		}
 	}
 	.delete-container:hover {
 		@extend .setting;
