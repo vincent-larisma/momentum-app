@@ -2,7 +2,15 @@ html {
 	color: $primary-font-color;
 	font-family: $primary-font;
 }
-
+.japanese {
+	text-align: center;
+	font-family: $accent-font-japanese;
+	font-weight: $font-accent-japanese;
+	font-size: $size-small - 0.6rem;
+}
+.flex-container {
+	font-weight: $font-bold;
+}
 section {
 	text-align: center;
 	font-size: $size-small;

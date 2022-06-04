@@ -1,3 +1,5 @@
+// import { refreshTime } from './clock'
+
 window.addEventListener('load', () => {
 	let refreshTime = () => {
 		let today = new Date()

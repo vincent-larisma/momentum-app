@@ -3,11 +3,22 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+.japanese {
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+.flex-container, footer {
+  font-weight: 700;
+}
+
 section {
   text-align: center;
   font-size: 3rem;
   font-weight: 600;
-  font-family: "Nunito", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 section:nth-child(1) {
   text-transform: uppercase;
@@ -40,19 +51,30 @@ section:nth-child(1) {
   justify-content: space-between;
   margin: 0.5rem;
 }
+.flex-container .japanese, footer .japanese {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
 
 .grid-container {
   display: grid;
   place-content: center;
   grid-row: repeat(3, 1fr);
   gap: 0.5rem;
-  height: 91vh;
+  height: 90vh;
 }
 .grid-container .background-container {
   display: grid;
   place-content: center;
   grid-row: repeat(3, 1fr);
   gap: 0.5rem;
+  background: rgba(134, 134, 134, 0.3);
+}
+.grid-container i {
+  justify-self: center;
+}
+.grid-container i .japanese {
+  font-size: 1.2em;
   background: rgba(134, 134, 134, 0.3);
 }
 .grid-container section {

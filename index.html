@@ -6,12 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Momentum App</title>
 		<link rel="stylesheet" href="./css/styles.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&family=Roboto:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Raleway:wght@300;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 		<script src="./js/script.js" defer></script>
 		<script
 			src="https://kit.fontawesome.com/6914ea1ba2.js"
@@ -21,22 +18,30 @@
 	<body>
 		<div class="input-name-container">
 			<div class="name">Your Name?</div>
+			<div class="japanese">
+			あなたの名前？</div>
 			<input autocomplete="off" type="text" name="username" data-input-name />
 		</div>
 
 		<div class="input-focus-container">
 			<div class="focus">What is your focus for today?</div>
+			<div class="japanese">
+
+			今日のあなたの焦点は何ですか？</div>
 			<input type="text" data-input-focus />
 		</div>
 
 		<header>
 			<nav class="flex-container">
-				<div class="setting">Link</div>
-				<div class="setting">Weather<i class="fa-solid fa-cloud-sun-rain"></i></div>
+				<div class="setting">Link <span class="japanese">
+				| リンク</span></div>
+				
+				<div class="setting"><span class="japanese">天気 | </span>Weather<i class="fa-solid fa-cloud-sun-rain"></i></div>
 			</nav>
 		</header>
 		<main>
 			<div class="grid-container">
+				<i class="fa-solid fa-location-dot "> <span class='japanese'> 東京都, ジャパン</span></i>
 				<div class="background-container">
 				<section class="time"></section>
 				<section class="greetings"></section>
@@ -46,7 +51,8 @@
 		</main>
 
 		<footer>
-			<div><i class="setting fa-solid fa-gear"></i></div>
+			<div><i class="setting fa-solid fa-gear"> | 設定</i> 
+ </div>
 			<div class="quote-container">
 				<div class="random-quote"><i class="fa-solid fa-rotate"></i></div>
 				<div class="add-quote"><i class="fa-solid fa-circle-plus"></i></div>
@@ -69,7 +75,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="todo">Todo</div>
+			<div class="todo">
+やること | Todo </div>
 		</footer>
 	</body>
 </html>
