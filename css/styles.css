@@ -103,6 +103,7 @@ footer {
   border-radius: 1px;
   background-color: rgba(134, 134, 134, 0.3);
   text-align: center;
+  font-size: 0.9rem;
   grid-column: 1/span 2;
 }
 

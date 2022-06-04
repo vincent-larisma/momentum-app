@@ -1,4 +1,4 @@
-export let refreshTime = () => {
+export const refreshTime = () => {
 	let today = new Date()
 	let amOrPm = today.getHours() >= 12 ? 'PM' : 'AM'
 	let addZeroSeconds = today.getSeconds() <= 9 ? '0' : ''
