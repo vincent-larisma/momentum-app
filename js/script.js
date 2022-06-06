@@ -16,17 +16,14 @@ import { cancelButton, toDoBackground, toDoIcon, toDoInput } from './todo.js'
 window.addEventListener('load', () => {
 	//clock --------------------------------
 
-	refreshTime()
 	setInterval(refreshTime, 1000)
 
 	//background --------------------------------
 
-	backgroundImgRefresh()
 	setInterval(backgroundImgRefresh, 1000)
 
 	//greetings --------------------------------
 
-	greet()
 	setInterval(greet, 1000)
 
 	// focus --------------------------------
@@ -53,7 +50,6 @@ window.addEventListener('load', () => {
 			quotes.push(quoteAdd)
 			localStorage.setItem('quotes', quoteAdd)
 			inputOpenQuote.classList.toggle('hidden')
-			console.log(quotes)
 			inputAddQuote.value = ''
 		}
 	})
