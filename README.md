@@ -4,19 +4,6 @@
 	
 * * * * *
 
-## What the user learned
->**I learned Javascript.**
-
-	
-* * * * *
-
-
-
-## Things to take note
->**Each project is not tampered with after being completed except for the readme file as this is a way to showcase the development of the user in each project as each project is a new experience for this user. Momentum-app is not responsive as it was the user's first time in using Javascript so the time was mainly used for Javascript integration.**
-* * * * *
-
-
 ## What it is supposed to look like
 #### Momentum app input User Name
 ![image](https://user-images.githubusercontent.com/103049779/185819443-e817bea1-604e-436e-8d1e-69421990a180.png)
@@ -27,6 +14,21 @@
 #### Momentum app 
 ![image](https://user-images.githubusercontent.com/103049779/185819554-128d28b7-d6ac-49b9-a6a2-4cb43fa07177.png)
 ----------------
+
+
+
+## What the user learned
+>**I learned Javascript specifically, creating a to-do list, using date and time, local storage, and conditional statements to showcase whether to change into day background, afternoon background, or night background.**
+
+	
+* * * * *
+
+
+
+## Things to take note
+>**Each project is not tampered with after being completed except for the readme file as this is a way to showcase the development of the user in each project as each project is a new experience for this user. Momentum-app is not responsive as it was the user's first time in using Javascript so the time was mainly used for Javascript integration.**
+* * * * *
+
 
 
 	
